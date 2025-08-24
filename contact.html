@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Shrinath Agritech</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      background: #2e7d32;
+      padding: 15px 20px;
+      color: white;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #c8e6c9;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .contact h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #2e7d32;
+    }
+    .contact p {
+      margin-bottom: 25px;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* Form */
+    .contact-form {
+      flex: 1;
+      min-width: 280px;
+      max-width: 450px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+    .contact-form button {
+      background: #2e7d32;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: 0.3s;
+      width: 100%;
+    }
+    .contact-form button:hover {
+      background: #1b5e20;
+    }
+
+    /* Info */
+    .contact-info {
+      flex: 1;
+      min-width: 250px;
+      max-width: 400px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    .contact-info h3 {
+      margin: 15px 0 5px;
+      color: #2e7d32;
+    }
+
+    /* Footer */
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 30px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 8px;
+      }
+      header h1 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>🌱 Shrinath Agritech</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html" target="_blank">Home</a></li>
+        <li><a href="about.html" target="_blank">About Us</a></li>
+        <li><a href="Clients.html" target="_blank">Clients</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out to us!</p>
+
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>📍 Address</h3>
+        <p>Satana–Kalwan Road, Malharwadi Munjwad Tq Satana-423301</p>
+        <h3>📞 Phone</h3>
+        <p>+91 9604983818</p>
+        <h3>✉️ Email</h3>
+        <p>shrinathagritech2024@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Shrinath Agritech. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

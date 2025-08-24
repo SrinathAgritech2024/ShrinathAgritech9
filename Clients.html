@@ -1,0 +1,129 @@
+<!-- ----- Clients Section ----- -->
+<section id="clients" style="background: linear-gradient(180deg, #27ae60, #d0f0c0, #27ae60); padding:60px 20px;">
+  <div style="max-width:1100px; margin:0 auto;">
+
+    <!-- Section Title -->
+    <h2 style="text-align:center; font-size:28px; margin-bottom:6px; color:#fff; font-weight:600;">Our Happy Clients</h2>
+    <p style="text-align:center; color:#f0fff0; margin-bottom:28px; font-size:16px;">Unki asli baatein, unke hi shabdon mein.</p>
+
+    <!-- Client Cards Grid -->
+    <div class="cards">
+      <article class="card">
+        <img src="client1.jpg" alt="Rakesh Patil" class="avatar">
+        <header>
+          <h3>Rakesh Patil</h3>
+          <span class="meta">Patil Farms, Nashik</span>
+        </header>
+        <blockquote>Srinath Agritech ke seeds aur guidance se hamara yield 20% badha. Service on time!</blockquote>
+      </article>
+
+      <article class="card">
+        <img src="client2.jpg" alt="Meera Joshi" class="avatar">
+        <header>
+          <h3>Meera Joshi</h3>
+          <span class="meta">Joshi Agro, Sangamner</span>
+        </header>
+        <blockquote>Drip setup aur soil testing ne cost kam ki. Team bahut supportive hai.</blockquote>
+      </article>
+
+      <article class="card">
+        <img src="client3.jpg" alt="Akash Shinde" class="avatar">
+        <header>
+          <h3>Akash Shinde</h3>
+          <span class="meta">Shinde Organics, Sinnar</span>
+        </header>
+        <blockquote>Packaging aur delivery time perfect. Quality consistent mili.</blockquote>
+      </article>
+    </div>
+
+    <!-- Large Client Photos -->
+    <div class="gallery">
+      <figure class="card">
+        <img src="client1-large.jpg" alt="Rakesh Patil">
+        <figcaption>Rakesh Patil: "Srinath Agritech ke seeds aur guidance se hamara yield 20% badha. Service on time!"</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="client2-large.jpg" alt="Meera Joshi">
+        <figcaption>Meera Joshi: "Drip setup aur soil testing ne cost kam ki. Team bahut supportive hai."</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="client3-large.jpg" alt="Akash Shinde">
+        <figcaption>Akash Shinde: "Packaging aur delivery time perfect. Quality consistent mili."</figcaption>
+      </figure>
+    </div>
+
+  </div>
+
+  <!-- CSS -->
+  <style>
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(2,6,23,0.08);
+      border: 1px solid #e5e7eb;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 26px rgba(2,6,23,0.12);
+    }
+    .card .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #e2e8f0;
+      margin-bottom: 12px;
+    }
+    .card header h3 { font-size: 18px; margin: 0; color: #1e293b; }
+    .card .meta { font-size: 13px; color: #64748b; display: block; margin-top: 3px; }
+    .card blockquote {
+      margin: 0;
+      color: #334155;
+      line-height: 1.55;
+      font-size: 15px;
+      text-align: left;
+      padding-left: 20px;
+      position: relative;
+    }
+    .gallery .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 16px 16px 0 0;
+    }
+    .gallery figcaption {
+      padding: 12px;
+      font-size: 15px;
+      color: #333;
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media(max-width:768px) {
+      .card blockquote, .gallery figcaption { text-align:center; padding-left:0; }
+      .gallery .card img { height: 180px; }
+    }
+    @media(max-width:480px) {
+      .cards, .gallery { grid-template-columns: 1fr; gap:15px; }
+      .gallery .card img { height: 150px; }
+      h2 { font-size:24px; }
+      p { font-size:14px; }
+      .card blockquote { font-size:14px; }
+      .gallery figcaption { font-size:14px; }
+    }
+  </style>
+</section>

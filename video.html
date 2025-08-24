@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos - Shrinath Agritech</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:Arial,sans-serif;background:#f9f9f9;color:#111;}
+
+    /* ----- Green strips ----- */
+    .green-strip{
+      background: #27ae60;
+      width:100%;
+      height:50px;
+    }
+    /* Navbar */
+    header {
+      background: #2e7d32;
+      padding: 15px 20px;
+      color: white;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #c8e6c9;
+    }
+
+
+    /* ----- Section Title ----- */
+    .section-title{
+      text-align:center;
+      color:#fff;
+      font-size:28px;
+      font-weight:600;
+      margin:15px auto;
+      padding:12px 20px;
+      background:#27ae60;
+      border-radius:8px;
+      max-width:400px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* ----- Video Section ----- */
+    .video-section{
+      padding:30px 15px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+
+    .video-card{
+      background:#fff;
+      border-radius:16px;
+      box-shadow:0 8px 24px rgba(0,0,0,0.2);
+      margin:20px 0;
+      max-width:900px;
+      width:100%;
+      overflow:hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .video-card:hover{
+      transform: translateY(-5px);
+      box-shadow:0 12px 32px rgba(0,0,0,0.3);
+    }
+
+    .video-card video{
+      width:100%;
+      height:450px;
+      display:block;
+      border-bottom:1px solid #ccc;
+    }
+
+    .description{
+      padding:15px 20px;
+      text-align:center;
+    }
+
+    .description h3{
+      margin:0;
+      color:#1f3c88;
+      font-size:22px;
+    }
+
+    .description p{
+      margin-top:8px;
+      color:#333;
+      font-size:16px;
+    }
+
+    /* ----- Footer Text ----- */
+    .footer-text{
+      text-align:center;
+      color:#fff;
+      background:#27ae60;
+      padding:12px 10px;
+      font-weight:600;
+      margin-top:10px;
+      border-radius:6px;
+      display:inline-block;
+    }
+
+    /* ----- Responsive Mobile ----- */
+    @media(max-width:768px){
+      .video-card video{height:300px;}
+      .description h3{font-size:20px;}
+      .description p{font-size:14px;}
+      .section-title{font-size:24px;}
+    }
+
+    @media(max-width:480px){
+      .video-card video{height:220px;}
+      .description h3{font-size:18px;}
+      .description p{font-size:13px;}
+      .section-title{font-size:20px;}
+    }
+    
+    /* Footer */
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+  <header>
+    <h1>🌱 Shrinath Agritech</h1>
+    <nav>
+      <ul>
+        <li>Video</li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Video Section -->
+  <section class="video-section">
+
+    <!-- Video 1 -->
+    <div class="video-card">
+      <video controls>
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support video tag.
+      </video>
+      <div class="description">
+        <h3>Demo Video 1</h3>
+        <p>Yeh pehla demo video hai jo high quality plants aur farming techniques dikhata hai.</p>
+      </div>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="video-card">
+      <video controls>
+        <source src="video2.mp4" type="video/mp4">
+        Your browser does not support video tag.
+      </video>
+      <div class="description">
+        <h3>Demo Video 2</h3>
+        <p>Dusra video showcase karta hai watermelon aur muskmelon cultivation process.</p>
+      </div>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="video-card">
+      <video controls>
+        <source src="video3.mp4" type="video/mp4">
+        Your browser does not support video tag.
+      </video>
+      <div class="description">
+        <h3>Demo Video 3</h3>
+        <p>Tisra video detail me batata hai farm visit aur customer testimonials.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Shrinath Agritech. All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>
